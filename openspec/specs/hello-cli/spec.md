@@ -6,23 +6,23 @@ Provide a simple CLI tool that prints a personalized greeting to standard output
 ## Requirements
 ### Requirement: Default greeting
 
-The CLI SHALL print a default hello world greeting unless the user provides a
-name.
+The CLI SHALL print a greeting in English by default and SHALL print a Spanish
+greeting when the caller requests Spanish.
 
-#### Scenario: Run without arguments
+#### Scenario: Run with a Spanish name
 
-- **WHEN** the user runs `npm run start`
-- **THEN** the program prints `Hello, world!`
+- **WHEN** the user runs `node src/hello.js Ada es`
+- **THEN** the program prints `Hola, Ada!`
 
-#### Scenario: Run with a name
+#### Scenario: Run in Spanish without a name
 
-- **WHEN** the user runs `node src/hello.js Ada`
-- **THEN** the program prints `Hello, Ada!`
+- **WHEN** greeting logic receives no usable name and language `es`
+- **THEN** it returns `Hola, mundo!`
 
-#### Scenario: Blank name
+#### Scenario: Unknown language
 
-- **WHEN** greeting logic receives a blank name
-- **THEN** it returns `Hello, world!`
+- **WHEN** greeting logic receives language `fr`
+- **THEN** it returns the English greeting
 
 ### Requirement: Demo banner
 
