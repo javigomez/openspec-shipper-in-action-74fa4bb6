@@ -1,4 +1,4 @@
-- [ ] 1. Add `src/banner.js` with a `demoBanner()` export.
-- [ ] 2. Add `tests/banner.test.js` for the banner output.
-- [ ] 3. Update package checks so the new source and test files are covered.
-- [ ] 4. Run `npm run check`.
+- [x] 1. Add `src/banner.js` with a `demoBanner()` export.
+- [x] 2. Add `tests/banner.test.js` for the banner output.
+- [x] 3. Update package checks so the new source and test files are covered.
+- [x] 4. Run `npm run check`.
