@@ -9,10 +9,10 @@
     "lint:branch": "node .openspec-shipper/scripts/validate-branch-name.mjs",
     "lint:commits": "commitlint --from origin/main --to HEAD",
     "start": "node src/hello.js",
-    "test:types": "node --check src/hello.js && node --check tests/hello.test.js",
+    "test:types": "node --check src/hello.js && node --check src/banner.js && node --check tests/hello.test.js && node --check tests/banner.test.js",
     "lint": "node scripts/lint-no-tabs.mjs",
     "format:check": "node scripts/check-format.mjs",
-    "test:unit": "node --test tests/hello.test.js",
+    "test:unit": "node --test tests/hello.test.js tests/banner.test.js",
     "check": "npm run test:types && npm run lint && npm run format:check && npm run test:unit"
   },
   "devDependencies": {
