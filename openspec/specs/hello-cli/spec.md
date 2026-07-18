@@ -6,23 +6,22 @@ Provide a simple CLI tool that prints a personalized greeting to standard output
 ## Requirements
 ### Requirement: Default greeting
 
-The CLI SHALL print a greeting in English by default and SHALL print a Spanish
-greeting when the caller requests Spanish.
+The CLI SHALL support a shout option that uppercases the final greeting.
 
-#### Scenario: Run with a Spanish name
+#### Scenario: Shout in English
+
+- **WHEN** the user runs `node src/hello.js Ada --shout`
+- **THEN** the program prints `HELLO, ADA!`
+
+#### Scenario: Shout in Spanish
+
+- **WHEN** the user runs `node src/hello.js Ada es --shout`
+- **THEN** the program prints `HOLA, ADA!`
+
+#### Scenario: No shout flag
 
 - **WHEN** the user runs `node src/hello.js Ada es`
 - **THEN** the program prints `Hola, Ada!`
-
-#### Scenario: Run in Spanish without a name
-
-- **WHEN** greeting logic receives no usable name and language `es`
-- **THEN** it returns `Hola, mundo!`
-
-#### Scenario: Unknown language
-
-- **WHEN** greeting logic receives language `fr`
-- **THEN** it returns the English greeting
 
 ### Requirement: Demo banner
 
