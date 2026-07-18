@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "profile": "node-npm",
+  "baseBranch": "main",
+  "packageManager": "npm",
+  "executor": {
+    "provider": "opencode",
+    "opencode": {
+      "bin": "opencode",
+      "model": "opencode-go/deepseek-v4-pro"
+    },
+    "codex": {
+      "bin": "codex",
+      "model": "gpt-5.5",
+      "reasoningEffort": "low"
+    }
+  },
+  "github": {
+    "autoOpenPr": false,
+    "prChecks": false
+  },
+  "checks": {
+    "install": "npm ci",
+    "branch": "npm run lint:branch --",
+    "commits": "npx commitlint",
+    "typecheck": "",
+    "lint": "",
+    "format": "",
+    "unit": "",
+    "openspec": "npm run openspec:cli --",
+    "validateProposal": "npm run openspec:validate-proposal --"
+  },
+  "safety": {
+    "enablePush": true,
+    "enableArchive": true
+  }
+}
