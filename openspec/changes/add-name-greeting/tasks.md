@@ -1,3 +1,3 @@
-- [ ] 1. Add tests for named greeting and blank-name fallback.
-- [ ] 2. Update `src/hello.js` to accept an optional name.
-- [ ] 3. Run `npm run check`.
+- [x] 1. Add tests for named greeting and blank-name fallback.
+- [x] 2. Update `src/hello.js` to accept an optional name.
+- [x] 3. Run `npm run check`.
