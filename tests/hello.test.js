@@ -29,3 +29,15 @@ test("falls back to English for unknown language", () => {
   assert.equal(greeting("Ada", "fr"), "Hello, Ada!");
   assert.equal(greeting(undefined, "fr"), "Hello, world!");
 });
+
+test("shouts greeting in English", () => {
+  assert.equal(greeting("Ada", undefined, true), "HELLO, ADA!");
+});
+
+test("shouts greeting in Spanish", () => {
+  assert.equal(greeting("Ada", "es", true), "HOLA, ADA!");
+});
+
+test("does not shout when shout flag is absent", () => {
+  assert.equal(greeting("Ada", "es"), "Hola, Ada!");
+});

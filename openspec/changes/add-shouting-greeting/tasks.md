@@ -1,4 +1,4 @@
-- [ ] 1. Add tests for English and Spanish shout output.
-- [ ] 2. Add an optional shout flag to `greeting()`.
-- [ ] 3. Parse `--shout` from CLI arguments.
-- [ ] 4. Run `npm run check`.
+- [x] 1. Add tests for English and Spanish shout output.
+- [x] 2. Add an optional shout flag to `greeting()`.
+- [x] 3. Parse `--shout` from CLI arguments.
+- [x] 4. Run `npm run check`.
