@@ -1,4 +1,4 @@
-- [ ] 1. Add tests for Spanish greeting behavior.
-- [ ] 2. Extend `greeting()` with an optional language parameter.
-- [ ] 3. Pass the second CLI argument as the language.
-- [ ] 4. Run `npm run check`.
+- [x] 1. Add tests for Spanish greeting behavior.
+- [x] 2. Extend `greeting()` with an optional language parameter.
+- [x] 3. Pass the second CLI argument as the language.
+- [x] 4. Run `npm run check`.
